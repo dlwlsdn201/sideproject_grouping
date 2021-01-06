@@ -1,24 +1,22 @@
-import React, {Component} from 'react';
-import styled from 'styled-components';
-import mainHeader from './Components/mainHeader';
-import mainBody from './Components/mainBody';
+import React, {Component,Fragment} from 'react';
+import MainHeader from './Components/mainHeader';
+import MainBody from './Components/mainBody';
 import './App.css';
+import styled from 'styled-components';
 
 class App extends Component{
   render(){
     return (
-      <div className="App">
-        <mainHeader/>
-        <mainBody/>
-        
-      </div>
+      <AppWrap>
+        <MainHeader/>
+        <MainBody/>  
+      </AppWrap>
       );
   }
 }
 
-// const mainHeader = styled.div`
-//     display : inline-block;
-// `
-
+const AppWrap = styled.div`
+  font-size : 1.1rem;
+`
 
 export default App;
