@@ -1,6 +1,6 @@
 import React, {Component,Fragment} from 'react';
-import MainHeader from './Components/mainHeader';
-import MainBody from './Components/mainBody';
+import MainHeader from './Components/MainHeader';
+import MainBody from './Components/MainBody';
 import './App.css';
 import styled from 'styled-components';
 

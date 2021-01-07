@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-class mainHeader extends Component {
+class MainHeader extends Component {
     render() {
         return (
             <HeaderWrap>
@@ -28,7 +28,7 @@ class mainHeader extends Component {
     }
 }
 
-const HeaderWrap = styled.section`
+const HeaderWrap = styled.header`
     width : 100%;
     margin : 10px auto;
     border : 1px dashed green;
@@ -64,4 +64,4 @@ const HeaderBottom = styled.div`
 
 
 
-export default mainHeader;
+export default MainHeader;
