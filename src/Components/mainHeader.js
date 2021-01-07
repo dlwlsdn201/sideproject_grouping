@@ -7,10 +7,10 @@ class MainHeader extends Component {
             <HeaderWrap>
                     <div className="Header__top">
                         <HeaderTop>
-                            <div className="logoBox">
+                            <LogoWrap>
                                 {/* 로고 이미지 들어갈 곳 */}
                                 div (For Logo)
-                            </div>
+                            </LogoWrap>
                             <NavWrap>
                                 <span className="navMenu__About">About</span>
                                 <span className="navMenu__Co-Study">Co-Study</span>
@@ -29,7 +29,7 @@ class MainHeader extends Component {
 }
 
 const HeaderWrap = styled.header`
-    width : 100%;
+    width :100vw;
     margin : 10px auto;
     border : 1px dashed green;
     background-color : lightyellow;
@@ -44,11 +44,21 @@ const HeaderTop = styled.div`
 `
 const NavWrap = styled.nav`
     display : flex;
-    width : 400px;
+    width : 40rem;
+    /* max-width : 50rem;
+    min-width : 30rem; */
     justify-content : space-between;
     padding : 5px 50px;
+    margin : auto 10px;
     background-color : lightgrey;
 `
+const LogoWrap = styled.nav`
+    width : 20rem;
+    max-width : 30rem;
+    min-width : 10rem;
+    background-color : blueviolet;
+`
+
 
 const HeaderBottom = styled.div`
     display : flex;

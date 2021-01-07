@@ -48,6 +48,7 @@ const BodyWrap = styled.section`
     justify-content : center;
     align-items : center ;
     border : 2px dashed red;
+    width : 90vw;
 `
 
 const CoStudyWrap = styled.div`
@@ -66,14 +67,14 @@ const ContentBox = styled.div`
     display : flex;
     justify-content : space-around;
     border : 1px dashed blue;
-    width : 60rem;
-    height : 15rem;
+    width : 60vw;
+    height : 15vw;
 `
 
 const ProjectContentBox = styled.div`
     border : 1px dashed green;
     display : inherit;
-    width : 18rem;
+    width : 18vw;
 `
 
 
