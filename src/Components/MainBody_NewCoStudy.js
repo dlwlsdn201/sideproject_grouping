@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+// import React, { Component } from 'react';
+// import styled from 'styled-components';
 
-class MainBody_NewCoStudy extends Component {
-    render() {
-        return (
+// class MainBody_NewCoStudy extends Component {
+//     render() {
+//         return (
             
 
-            // </CoStudyWrap>
+//             </CoStudyWrap>
             
-        );
-    }
-}
+//         );
+//     }
+// }
 
 
 
-export default MainBody_NewCoStudy;
+// export default MainBody_NewCoStudy;
 

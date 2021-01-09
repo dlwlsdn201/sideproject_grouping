@@ -33,6 +33,7 @@ const BodyWrap = styled.section`
   align-items: center;
   border: 2px dashed red;
   width: 90vw;
+  padding: 1em;
 `;
 
 const CoStudyWrap = styled.div`
@@ -43,7 +44,7 @@ const CoStudyWrap = styled.div`
 const TitleBox = styled.h3`
   justify-self: flex-start;
   border: 1px dashed red;
-  width: 10rem;
+  width: 10em;
   text-align: center;
 `;
 
