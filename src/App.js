@@ -16,18 +16,6 @@ class App extends Component {
 }
 
 const AppWrap = styled.div`
-<<<<<<< HEAD
-  font-size : 1rem;
-  width : 100%;
-  height: 100vh;
-  max-width : 100%;
-  max-height : 100%;
-  margin : 0 ;
-  display : flex;
-  flex-direction : column;
-  align-items : center;
-`
-=======
   font-size: 1.1rem;
   width: 100vw;
   height: 100vh;
@@ -36,6 +24,5 @@ const AppWrap = styled.div`
   flex-direction: column;
   align-items: center;
 `;
->>>>>>> 26012e11830b60c10cf9deae28c163d1f53bfe26
 
 export default App;

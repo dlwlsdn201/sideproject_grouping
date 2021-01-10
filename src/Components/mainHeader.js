@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import logoImg from '../images/logo.png'
 
-class MainHeader extends Component {
-    render() {
+
+
+
+const MainHeader = () => {
+    // render() {
         return (
             <HeaderWrap>
                     <div className="Header__top">
@@ -30,8 +33,10 @@ class MainHeader extends Component {
                     </HeaderBottom>
             </HeaderWrap>
         );
-    }
+    // }
 }
+
+export default MainHeader;
 
 const HeaderWrap = styled.header`
     width :99.5%;   /*헤더 완성되면 border 제거 후 width:100%로 맞추기*/ 
@@ -39,14 +44,12 @@ const HeaderWrap = styled.header`
     border : 1px dashed green;
     background-color : lightyellow;
 `
-
 const HeaderTop = styled.div`
     display : flex;
     justify-content : space-between;
     margin-right : 1rem;
     background-color : lightcyan;
 `
-
 const LogoWrap = styled.nav`
     display : inherit;
     justify-content : center;
@@ -56,7 +59,6 @@ const LogoWrap = styled.nav`
     padding : 0;
     background-color : blueviolet;
 `
-
 const NavWrap = styled.nav`
     display : flex;
     width : 35em;
@@ -68,7 +70,6 @@ const NavWrap = styled.nav`
     margin : auto 10px;
     background-color : lightgrey;
 `
-
 const NavMenu = styled.div`
     display : flex;
     align-items : center;
@@ -88,10 +89,9 @@ const Link = styled.a`
 
     &::after{
         content : "|";
-        left : 50px;
+        
     }
 `
-
 const HeaderBottom = styled.div`
     display : flex;
     justify-content : center;
@@ -100,5 +100,3 @@ const HeaderBottom = styled.div`
     /* width: 100%; */
     background-color : lightcoral;
 `
-
-export default MainHeader;
