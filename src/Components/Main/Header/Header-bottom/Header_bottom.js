@@ -14,7 +14,7 @@ const HeaderBottomWrap = styled.div`
 const Header_bottom = () => {
     return (
         <HeaderBottomWrap>
-            Header 슬로건
+            슬로건 & 배경사진
         </HeaderBottomWrap>
     );
 };

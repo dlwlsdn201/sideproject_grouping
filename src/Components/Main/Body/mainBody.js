@@ -1,30 +1,21 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import NewCoStudy from "./New-CoStudy/NewCoStudy";
+import NewCoProject from "./New-CoProject/NewCoProject";
+import NewQnA from "./New-QnA/NewQnA";
 
-class MainBody extends Component {
-  render() {
-    return (
-      <BodyWrap>
-        <CoStudyWrap>
+const MainBody = () => {
+  return (
+    <BodyWrap>
           <TitleBox>New Co-Study</TitleBox>
-          <ContentBox></ContentBox>
-        </CoStudyWrap>
-        <CoStudyWrap>
+            <NewCoStudy/>
           <TitleBox>New Co-Project</TitleBox>
-          <ContentBox>
-            <ProjectContentBox>new project 1</ProjectContentBox>
-            <ProjectContentBox>new project 2</ProjectContentBox>
-            <ProjectContentBox>new project 3</ProjectContentBox>
-          </ContentBox>
-        </CoStudyWrap>
-        <CoStudyWrap>
+            <NewCoProject/>
           <TitleBox>New Q&A</TitleBox>
-          <ContentBox></ContentBox>
-        </CoStudyWrap>
+            <NewQnA/>
       </BodyWrap>
-    );
-  }
-}
+  );
+};
 
 const BodyWrap = styled.section`
   display: flex;
@@ -36,10 +27,7 @@ const BodyWrap = styled.section`
   padding: 1em;
 `;
 
-const CoStudyWrap = styled.div`
-  justify-content: center;
-  align-items: center;
-`;
+
 
 const TitleBox = styled.h3`
   justify-self: flex-start;
@@ -48,18 +36,7 @@ const TitleBox = styled.h3`
   text-align: center;
 `;
 
-const ContentBox = styled.div`
-  display: flex;
-  justify-content: space-around;
-  border: 1px dashed blue;
-  width: 60vw;
-  height: 15vw;
-`;
 
-const ProjectContentBox = styled.div`
-  border: 1px dashed green;
-  display: inherit;
-  width: 18vw;
-`;
+
 
 export default MainBody;
