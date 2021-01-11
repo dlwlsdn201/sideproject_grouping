@@ -1,21 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
-
-const Header_bottom = () => {
-    return (
-        <Header_BottomWrap>
-            Header 슬로건
-        </Header_BottomWrap>
-    );
-};
-
-export default Header_bottom;
-
-
-
-const Header_BottomWrap = styled.div`
+const HeaderBottomWrap = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,3 +9,18 @@ const Header_BottomWrap = styled.div`
     /* width: 100%; */
     background-color: lightcoral;
 `;
+
+
+const Header_bottom = () => {
+    return (
+        <HeaderBottomWrap>
+            Header 슬로건
+        </HeaderBottomWrap>
+    );
+};
+
+
+
+export default Header_bottom;
+
+
