@@ -17,7 +17,7 @@ class MainHeader extends Component {
 export default MainHeader;
 
 const HeaderWrap = styled.header`
-  display: inline-block;
+  /* display: inline-block; */
   width: 99.5%; /*헤더 완성되면 border 제거 후 width:100%로 맞추기*/
   margin: 10px auto;
   border: 1px dashed green;
