@@ -1,16 +1,18 @@
 import React, { Fragment } from "react";
-import MainHeader from "./Components/Home/Header/MainHeader";
-import MainBody from "./Components/Home/Main/MainBody";
+import HomeHeader from "./Components/Home/Header/HomeHeader";
+import HomeBody from "./Components/Home/Main/HomeMain";
 import "./App.css";
 import GlobalStyle from "./GlobalStyles"
+import Footer from "./Components/Home/Footer/Footer";
 
 
 const App = () => {
   return (
     <Fragment>
       <GlobalStyle/>
-      <MainHeader/>
-      <MainBody/>
+      <HomeHeader/>
+      <HomeBody/>
+      <Footer/>
     </Fragment>
   );
 };
