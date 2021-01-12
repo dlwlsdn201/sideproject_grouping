@@ -27,13 +27,13 @@ const Nav = () => {
 
 const NavWrap = styled.nav`
     display: flex;
-    width: 35em;
+    width: 48%;
     max-width: 50rem;
     min-width: 35rem;
     height: 3.2em;
     justify-content: space-between;
-    padding: 5px 20px;
-    margin: auto 10px;
+    padding: 0.5% 3%;
+    margin: auto 0;
     background-color: lightgrey;
 `;
 
@@ -55,13 +55,6 @@ const Link = styled.a`
         cursor: pointer;
         width: 100%;
         padding: 0;
-    }
-
-    &::after {
-        position : absolute;
-        content: "|";
-        margin : 0;
-        margin-left : 2%;
     }
 `;
 

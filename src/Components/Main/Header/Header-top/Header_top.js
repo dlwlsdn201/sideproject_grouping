@@ -21,7 +21,7 @@ export default Header_top;
 
 const Header_topWrap = styled.div`
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin-right: 1rem;
     background-color: lightcyan;
 `;
