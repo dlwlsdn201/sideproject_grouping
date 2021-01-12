@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer>
             <div>
-            / Email 
+            / Email
             / Contact
             / Group Name
             </div>
