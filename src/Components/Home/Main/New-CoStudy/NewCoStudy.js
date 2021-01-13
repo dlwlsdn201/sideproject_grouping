@@ -10,26 +10,35 @@ const NewCoStudy = () => {
     return (
         <Container>
             <ContentBox>
-                {/* Content1
-                    COntent2
-                    Content3
-                */}
+                Content1
             </ContentBox>
-        </Container>
+            <ContentBox>
+                Content2
+            </ContentBox>
+            <ContentBox>
+                Content3
+            </ContentBox>
+        </Container> 
     );
 }
 
 const Container = styled.div`
+    display : flex;
+    flex-direction : row;
     justify-content: center;
     align-items: center;
+    width : 100%;
+    height: 100%;
+    margin : 2% auto;
 `;
 
 const ContentBox = styled.div`
     display: flex;
     justify-content: space-around;
+    margin : auto 1%;
     border: 1px dashed blue;
-    width: 60vw;
-    height: 15vw;
+    width: 30%;
+    height: 16em;
 `;
 
 export default NewCoStudy;

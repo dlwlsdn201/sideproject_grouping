@@ -7,13 +7,19 @@ import NewQnA from "./New-QnA/NewQnA";
 const MainBody = () => {
   return (
     <BodyWrap>
-          <TitleBox>New Co-Study</TitleBox>
-            <NewCoStudy/>
-          <TitleBox>New Co-Project</TitleBox>
-            <NewCoProject/>
-          <TitleBox>New Q&A</TitleBox>
-            <NewQnA/>
-      </BodyWrap>
+      <SectionWrap>
+        <TitleBox>New Co-Study</TitleBox>
+        <NewCoStudy/>
+      </SectionWrap>
+      <SectionWrap>
+        <TitleBox>New Co-Project</TitleBox>  
+        <NewCoProject/>
+      </SectionWrap>
+      <SectionWrap>
+        <TitleBox>New Q&A</TitleBox>
+        <NewQnA/>
+      </SectionWrap>
+    </BodyWrap>
   );
 };
 
@@ -25,12 +31,22 @@ const BodyWrap = styled.section`
   border: 2px dashed red;
   width: 90vw;
   padding: 1em;
+  height: 100%;
 `;
 
+const SectionWrap = styled.div`
+  width: 70%;
+  height: 150%;
+  display : flex;
+  /* flex-direction : column;
+  align-items : center; */
+  border : 2px solid brown;
+  margin : 2% auto;
+`
 
 
 const TitleBox = styled.h3`
-  justify-self: flex-start;
+  align-self: flex-start;
   border: 1px dashed red;
   width: 10em;
   text-align: center;
