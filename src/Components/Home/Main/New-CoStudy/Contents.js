@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import frontEndImg from '../../../../images/frontEnd.png';
 //--------styled-Components Codes-----------
 const ContentBox = styled.div`
     display: flex;
@@ -10,20 +10,54 @@ const ContentBox = styled.div`
     border: 1px dashed blue;
     width: 100%;
     height: 20em;
+    flex-flow : column wrap;
 `;
 
 const Content = styled.div`
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
     border: 1px dashed green;
-    display: inherit;
     width: 30%;
     height : 90%;
 `;
+
+const ImgWrap = styled.div`
+    width : 90%;
+    height : 45%;
+    margin : 5% auto;
+    flex-grow : 0;
+    
+`
+
+const NewContentTitle = styled.h3`
+    margin : 5% 0;
+    flex-shrink : 1;
+    flex-grow : 2;
+    `
+
+const Personnel = styled.p`
+    width : 90%;
+    height :1%;
+    text-align : right;
+    font-size : 0.8em;
+    flex-grow : 2;
+`
+
 // -----------------------------------------
 
 const Contents = () => {
     return (
         <ContentBox>
-            <Content>Content</Content>
+            <Content>
+                <ImgWrap>
+                    <img src={frontEndImg} alt="front-End"></img>
+                </ImgWrap>
+                <NewContentTitle>
+                    [Title Area]
+                </NewContentTitle>
+                <Personnel>2명 / ~5명</Personnel>
+            </Content>
             <Content>Content2</Content>
             <Content>Content3</Content>
         </ContentBox>

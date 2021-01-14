@@ -30,6 +30,13 @@ const GlobalStyles = createGlobalStyle`
         background-color: lightyellow;
     };
 
+    img{
+    width : 100%;
+    height : 100%;
+    min-width : 50%;
+    min-height : 50%;
+    }
+
 ` 
 
 export default GlobalStyles;
