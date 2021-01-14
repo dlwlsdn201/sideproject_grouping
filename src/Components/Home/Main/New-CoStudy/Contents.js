@@ -4,35 +4,39 @@ import frontEndImg from '../../../../images/frontEnd.png';
 //--------styled-Components Codes-----------
 const ContentBox = styled.div`
     display: flex;
-    flex-direction : row;
     justify-content: space-around;
     margin : auto 1%;
     border: 1px dashed blue;
     width: 100%;
+    min-width : 100%;
     height: 20em;
-    flex-flow : column wrap;
+    flex-flow : row wrap;
 `;
 
 const Content = styled.div`
+    /* flex : auto */
     display : flex;
     justify-content : space-around;
     align-items : center;
     border: 1px dashed green;
     width: 30%;
-    height : 90%;
+    max-width : 99%;
+    height : 70%;
+    max-height : 100%;
 `;
 
 const ImgWrap = styled.div`
     width : 90%;
-    height : 45%;
-    margin : 5% auto;
+    max-width : 90%;
+    height : 50%;
+    margin : 2% 0;
+    padding : 0;
     flex-grow : 0;
     
 `
 
 const NewContentTitle = styled.h3`
     margin : 5% 0;
-    flex-shrink : 1;
     flex-grow : 2;
     `
 
@@ -56,7 +60,7 @@ const Contents = () => {
                 <NewContentTitle>
                     [Title Area]
                 </NewContentTitle>
-                <Personnel>2명 / ~5명</Personnel>
+                <Personnel>[2명 / ~5명]</Personnel>
             </Content>
             <Content>Content2</Content>
             <Content>Content3</Content>

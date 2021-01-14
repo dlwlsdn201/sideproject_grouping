@@ -23,5 +23,8 @@ const Header_topWrap = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-basis : 1;
     background-color: lightcyan;
+    width : 100%;
+    height : 100%;
 `;

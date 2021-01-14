@@ -2,6 +2,13 @@ import styled, {createGlobalStyle} from "styled-components";
 
 
 const GlobalStyles = createGlobalStyle`
+    html{
+        margin : 0;
+        padding : 0;
+        width : 100%;
+        height : 100%;
+    }
+
     body{
         background : grey;
         display: flex;
@@ -9,9 +16,11 @@ const GlobalStyles = createGlobalStyle`
         align-items: center;
         width: 100%;
         height: 100%;
+        min-width : 800px;
         font-size: 1.1rem;
-        margin: 0.1% 0;
+        margin: 0;
         padding : 0;
+    
     }
 
     div{
@@ -23,18 +32,26 @@ const GlobalStyles = createGlobalStyle`
         margin : 0;
     }
 
-    header, main, footer, section{
-        width: 99.5%; /*헤더 완성되면 border 제거 후 width:100%로 맞추기*/
-        margin: 10px auto;
+    header, footer, section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw; /*헤더 완성되면 border 제거 후 width:100%로 맞추기*/
+        height : 100%;
+        margin: 1% 0;
+        padding: 1em;
         border: 1px dashed green;
         background-color: lightyellow;
     };
 
+
+
     img{
-    width : 100%;
-    height : 100%;
-    min-width : 50%;
-    min-height : 50%;
+    width : auto;
+    height : auto;
+    max-width : 100%;
+    max-height : 100%;
     }
 
 ` 

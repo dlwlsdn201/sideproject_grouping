@@ -27,10 +27,8 @@ const Nav = () => {
 
 const NavWrap = styled.nav`
     display: flex;
-    width: 48%;
-    max-width: 50rem;
-    min-width: 35rem;
-    height: 3.2em;
+    width: 60%;
+    height: 2.4em;
     justify-content: space-between;
     padding: 0.5% 3%;
     margin: auto 0;

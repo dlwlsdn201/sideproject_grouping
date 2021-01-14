@@ -11,17 +11,15 @@ const BodyWrap = styled.section`
   justify-content: center;
   align-items: center;
   border: 2px dashed red;
-  width: 90vw;
-  padding: 1em;
   height: 100%;
 `;
 
 const SectionWrap = styled.div`
-  width: 70%;
-  height: 150%;
+  width: 90%;
+  height: 100%;
   display : flex;
-  /* flex-direction : column;
-  align-items : center; */
+  flex-direction : column;
+  align-items : center;
   border : 2px solid brown;
   margin : 2% auto;
 `;
@@ -51,6 +49,7 @@ const MainBody = () => {
         <NewQnA/>
       </SectionWrap>
     </BodyWrap>
+    
   );
 };
 

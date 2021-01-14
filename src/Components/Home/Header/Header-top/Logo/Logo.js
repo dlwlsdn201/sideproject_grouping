@@ -12,13 +12,13 @@ const Logo = () => {
     );
 };
 
-const LogoWrap = styled.nav`
-    display: inherit;
-    justify-content: center;
-    width: 6em;
+const LogoWrap = styled.div`
+    display: flex;
+    align-items : flex-start;
+    width: 10%;
+    height : 3em;
     /* max-width : 30em; */
-    min-width: 5em;
-    padding: 0;
+    /* min-width: 5em; */
     background-color: blueviolet;
 `;
 
