@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+//--------styled-Components Codes-----------
 const ContentBox = styled.div`
     display: flex;
     flex-direction : row;
@@ -17,7 +18,7 @@ const Content = styled.div`
     width: 30%;
     height : 90%;
 `;
-
+// -----------------------------------------
 
 const Contents = () => {
     return (

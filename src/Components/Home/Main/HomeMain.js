@@ -4,25 +4,7 @@ import NewCoStudy from "./New-CoStudy/NewCoStudy";
 import NewCoProject from "./New-CoProject/NewCoProject";
 import NewQnA from "./New-QnA/NewQnA";
 
-const MainBody = () => {
-  return (
-    <BodyWrap>
-      <SectionWrap>
-        <TitleBox>New Co-Study</TitleBox>
-        <NewCoStudy/>
-      </SectionWrap>
-      <SectionWrap>
-        <TitleBox>New Co-Project</TitleBox>  
-        <NewCoProject/>
-      </SectionWrap>
-      <SectionWrap>
-        <TitleBox>New Q&A</TitleBox>
-        <NewQnA/>
-      </SectionWrap>
-    </BodyWrap>
-  );
-};
-
+//--------styled-Components Codes-----------
 const BodyWrap = styled.section`
   display: flex;
   flex-direction: column;
@@ -42,8 +24,7 @@ const SectionWrap = styled.div`
   align-items : center; */
   border : 2px solid brown;
   margin : 2% auto;
-`
-
+`;
 
 const TitleBox = styled.h3`
   align-self: flex-start;
@@ -51,8 +32,26 @@ const TitleBox = styled.h3`
   width: 10em;
   text-align: center;
 `;
+// -----------------------------------------
 
 
-
+const MainBody = () => {
+  return (
+    <BodyWrap>
+      <SectionWrap>
+        <TitleBox>New Co-Study</TitleBox>
+        <NewCoStudy/>
+      </SectionWrap>
+      <SectionWrap>
+        <TitleBox>New Co-Project</TitleBox>  
+        <NewCoProject/>
+      </SectionWrap>
+      <SectionWrap>
+        <TitleBox>New Q&A</TitleBox>
+        <NewQnA/>
+      </SectionWrap>
+    </BodyWrap>
+  );
+};
 
 export default MainBody;

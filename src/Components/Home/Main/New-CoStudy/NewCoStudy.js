@@ -2,14 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Contents from './Contents';
 
-const NewCoStudy = () => {
-    return (
-        <Container>
-            <Contents/>
-        </Container> 
-    );
-}
-
+//--------styled-Components Codes-----------
 const Container = styled.div`
     display : flex;
     flex-direction : row;
@@ -19,6 +12,17 @@ const Container = styled.div`
     height: 100%;
     margin : 2% auto;
 `;
+//------------------------------------------
+
+
+const NewCoStudy = () => {
+    return (
+        <Container>
+            <Contents/>
+        </Container> 
+    );
+}
+
 
 
 export default NewCoStudy;
