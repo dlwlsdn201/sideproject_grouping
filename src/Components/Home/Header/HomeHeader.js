@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Header_Top from "./Header-top/Header_top";
-import Header_Bottom from "./Header-bottom/Header_bottom"
+import HeaderTop from "./Header-top/Header_top";
+import HeaderBottom from "./Header-bottom/Header_bottom"
 
 
 class MainHeader extends Component {
   render() {
     return (
       <header>
-        <Header_Top/>
-        <Header_Bottom/>
+        <HeaderTop/>
+        <HeaderBottom/>
       </header>
     );
   }
