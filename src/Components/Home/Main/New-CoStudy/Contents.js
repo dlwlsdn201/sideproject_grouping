@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import frontEndImg from '../../../../images/frontEnd.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //--------styled-Components Codes-----------
 const ContentBox = styled.div`
     display: flex;
@@ -40,6 +41,10 @@ const NewContentTitle = styled.h3`
     flex-grow : 2;
     `
 
+const NewContentSubject = styled.div`
+
+`
+
 const Personnel = styled.p`
     width : 90%;
     height :1%;
@@ -51,16 +56,29 @@ const Personnel = styled.p`
 // -----------------------------------------
 
 const Contents = () => {
+    const[info, setInfo] = useState(
+        {   img : frontEndImg,
+            title : "제목 정의되지 않음",
+            maxPersonnel : 4,
+            joinedPersonnel : 0 
+        }
+    )
     return (
         <ContentBox>
             <Content>
                 <ImgWrap>
-                    <img src={frontEndImg} alt="front-End"></img>
+                    <img src={info.img} alt="front-End"></img>
                 </ImgWrap>
                 <NewContentTitle>
-                    [Title Area]
+                    {info.title}
                 </NewContentTitle>
-                <Personnel>[2명 / ~5명]</Personnel>
+                <FontAwesomeIcon icon={["fas", "coffee"]}/>
+                {/* <button onClick={function(){
+                    setInfo({
+                        ...info, 
+                        joinedPersonnel : info.joinedPersonnel +1})
+                }}>참가</button> */}
+                <Personnel>{info.joinedPersonnel}명 / {info.maxPersonnel}명</Personnel>
             </Content>
             <Content>Content2</Content>
             <Content>Content3</Content>
