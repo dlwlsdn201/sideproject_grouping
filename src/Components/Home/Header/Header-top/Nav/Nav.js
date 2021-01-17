@@ -7,19 +7,19 @@ const Nav = () => {
     return (
         <NavWrap>
             <NavMenu>
-            <Link href="#">About</Link>
+            <Link href="about">About</Link>
             </NavMenu>
             <NavMenu>
-            <Link href="#">Co-Study</Link>
+            <Link href="Co-Study">Co-Study</Link>
             </NavMenu>
             <NavMenu>
-            <Link href="#">Co-Project</Link>
+            <Link href="Co-Project">Co-Project</Link>
             </NavMenu>
             <NavMenu>
-            <Link href="#">Q&A</Link>
+            <Link href="Q&A">Q&A</Link>
             </NavMenu>
             <NavMenu>
-            <Link href="#">MyPage</Link>
+            <Link href="MyPage">MyPage</Link>
             </NavMenu>
         </NavWrap>
     );

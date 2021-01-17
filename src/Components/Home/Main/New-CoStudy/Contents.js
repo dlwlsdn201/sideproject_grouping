@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import frontEndImg from '../../../../images/frontEnd.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 //--------styled-Components Codes-----------
 const ContentBox = styled.div`
     display: flex;
@@ -72,7 +73,7 @@ const Contents = () => {
                 <NewContentTitle>
                     {info.title}
                 </NewContentTitle>
-                <FontAwesomeIcon icon={["fas", "coffee"]}/>
+                {/* <FontAwesomeIcon icon="check-square"/> */}
                 {/* <button onClick={function(){
                     setInfo({
                         ...info, 

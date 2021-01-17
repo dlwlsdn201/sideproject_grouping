@@ -1,19 +1,22 @@
 import React, { Fragment } from "react";
-import HomeHeader from "./Components/Home/Header/HomeHeader";
-import HomeMain from "./Components/Home/Main/HomeMain";
-import "./App.css";
-import GlobalStyle from "./GlobalStyles"
-import Footer from "./Components/Home/Footer/Footer";
-
+import GlobalStyle from "./GlobalStyles";
+import HomePage from "./Components/Home/HomePage";
+import CoStudyPage from "./Components/Co-Study/CoStudyPage";
+import CoProjectPage from "./Components/Co-Project/CoProjectPage"
+import QnAPage from "./Components/Q&A/QnAPage"
+import MyPagePage from "./Components/MyPage/MyPage"
+import {Route} from 'react-router-dom';
 
 const App = () => {
   return (
-    <Fragment>
+    <>
       <GlobalStyle/>
-      <HomeHeader/>
-      <HomeMain/>
-      <Footer/>
-    </Fragment>
+      <Route component={HomePage} path={["/Home", "/"]} exact/>
+      <Route component={CoStudyPage} path="/Co-Study"/>
+      <Route component={CoProjectPage} path="/Co-Project"/>
+      <Route component={QnAPage} path="/Q&A"/>
+      <Route component={MyPagePage} path="/MyPage"/>
+    </>
   );
 };
 
