@@ -1,15 +1,12 @@
 import React from 'react';
-import HomeHeader from "../Components/MyPage/Header/HomeHeader";
-import HomeMain from "../Components/Main/HomeMain";
-import HomeFooter from "../Components/MyPage/Footer/Footer";
+import Header from "../components/base/Header";
+
 
 
 const HomePage = () => {
     return (
         <>
-            {/* <HomeHeader/> */}
-            <HomeMain/>
-            {/* <HomeFooter/> */}
+            <Header/>
         </>
     );
 };

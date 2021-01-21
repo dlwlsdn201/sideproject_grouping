@@ -1,21 +1,20 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import HeaderTop from "./Header-top/Header_top";
-import HeaderBottom from "./Header-bottom/Header_bottom"
+// import HeaderTop from "./Header-top/Header_top";
+// import HeaderBottom from "./Header-bottom/Header_bottom"
 
 
-class MainHeader extends Component {
+class Header extends Component {
   render() {
     return (
       <header>
-        <HeaderTop/>
-        <HeaderBottom/>
+        Header
       </header>
     );
   }
 }
 
-export default MainHeader;
+export default Header;
 
 // const HeaderWrap = styled.header`
 //   /* display: inline-block; */
