@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 import GlobalStyle from "./GlobalStyles";
-import HomePage from "./Components/Home/HomePage";
-import CoStudyPage from "./Components/Co-Study/CoStudyPage";
-import CoProjectPage from "./Components/Co-Project/CoProjectPage"
-import QnAPage from "./Components/Q&A/QnAPage"
-import MyPagePage from "./Components/MyPage/MyPage"
+import HomePage from "./pages/HomePage";
+import CoStudyPage from "./pages/CoStudyPage";
+import CoProjectPage from "./pages/CoProjectPage"
+import QnAPage from "./pages/QnAPage"
+import MyPagePage from "./pages/MyPage"
 import {Route} from 'react-router-dom';
 
 const App = () => {
