@@ -8,16 +8,20 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         height: 100%;
         width: 100%;
-        font-size: 1.2em;
+        font-size: 1em;
         background : ${palette.gray[3]};
         display : flex;
         flex-flow: column nowrap;
         align-items: center;
     }
 
-    header,main,footer{
-        margin : 0 auto;
+    header,main,footer,ul{
+        margin : 0;
     }
+
+      header,main,footer{
+          margin: 0 auto;
+      }
 
     img{
     width : 100%;
@@ -39,6 +43,11 @@ const GlobalStyles = createGlobalStyle`
         box-sizing : border-box;
     }
     
+    li{
+        list-style: none;
+    }
+
+
 ` 
 
 export default GlobalStyles;
