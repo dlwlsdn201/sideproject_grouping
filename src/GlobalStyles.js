@@ -1,4 +1,5 @@
 import styled, {createGlobalStyle} from "styled-components";
+import palette from "./lib/styles/palette";
 
 
 const GlobalStyles = createGlobalStyle`
@@ -8,7 +9,14 @@ const GlobalStyles = createGlobalStyle`
         height: 100%;
         width: 100%;
         font-size: 1.2em;
+        background : ${palette.gray[3]};
+        display : flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
 
+    header,main,footer{
+        margin : 0 auto;
     }
 
     img{
