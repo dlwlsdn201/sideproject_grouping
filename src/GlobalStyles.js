@@ -15,13 +15,19 @@ const GlobalStyles = createGlobalStyle`
         align-items: center;
     }
 
-    header,main,footer,ul{
+    ul{
         margin : 0;
     }
 
-      header,main,footer{
-          margin: 0 auto;
-      }
+    header,main,footer,section{
+        margin: 0 auto;
+    }
+
+    section{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
     img{
     width : 100%;

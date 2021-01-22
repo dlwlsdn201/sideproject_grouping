@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Styled, { keyframes } from 'styled-components';
 // import {FaReact} from 'react-icons/fa';
 import palette from '../../lib/styles/palette';
@@ -15,7 +15,6 @@ const RotateHorizonal = keyframes`
         transform: rotateY(360deg);
     }
 `
-
 const StyledContentWrap = Styled.div `
     position: relative;
     width : 30%;
@@ -32,13 +31,11 @@ const StyledTitle = Styled.strong`
     padding : 0 auto;
     border : 1px dashed blue; 
 `;
-
 const StyledBrief = Styled.p`
     width: 100%;
     padding: 0 auto;
     border: 1px dashed black;
 `;
-
 const StyledRowWrap = Styled.div`
     display: flex;
     justify-content: space-between;
@@ -46,18 +43,14 @@ const StyledRowWrap = Styled.div`
     flex-flow : row nowrap;
     box-sizing: border-box;
 `;
-
 const StyledPeriod = Styled.h6`
     border: 1px dashed brown;
     margin-top: 0;
 `;
-
 const StyledPersonnal = Styled.h5`
     border: 1px solid black;
     margin-top: 0;
 `;
-
-
 const StyledHashTag = Styled.ul`
     border : 1px solid green;
     width: 40%;
@@ -81,7 +74,6 @@ const StyledIconWrap = Styled.div`
 
     
 `
-
 const Icon = {
     fontSize: '1.5em',
     margin: '0.2em'
@@ -91,6 +83,12 @@ const Icon = {
 
 
 const Content = () => {
+    const [title, setTitle] = useState('');
+    const [brief, setBrief] = useState('');
+    const [period, setPeriod] = useState('');
+    const [personnal, setPersonnal] = useState('');
+    const [tag, setTag] = useState('');
+    
     return (
         <StyledContentWrap>
             <StyledTitle>

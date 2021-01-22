@@ -37,6 +37,8 @@ const Main = () => {
         <StyledMainContainer>
             <StyledOddSectionWrap>
                 <Content/>
+                <Content/>
+                <Content/>
             </StyledOddSectionWrap>
             <StyledEvenSectionWrap>
                 section2_Co-Project 

@@ -23,9 +23,9 @@ const StyledHeaderContainer = styled.header`
 
 const StyledLogoWrap = styled.div`
   border : 2px dashed red;
-  width : 10%;
+  width : 5.5rem;
   height: 100%;
-  min-width : 10%;
+  min-width : 5rem;
 `
 
 const StyledNavWrap = styled.nav`
@@ -39,11 +39,11 @@ const StyledNavWrap = styled.nav`
 `
 
 const StyledNavMenu = styled.li`
-
   display: flex;
   align-items: center;
   justify-content: center;
   list-style: none;
+  flex-grow: 1;
   margin : 0 0.5rem;
   padding : auto 100px;
   border : 1px solid purple;
