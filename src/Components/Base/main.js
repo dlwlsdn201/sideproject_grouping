@@ -2,21 +2,33 @@ import React from 'react';
 import Styled from 'styled-components';
 import {router} from 'react-router-dom';
 import palette from '../../lib/styles/palette';
-
+import Content from '../common/Content';
 
 const StyledMainContainer = Styled.main`
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-contents: center;
     background : white;
     width: 90%;
-    height: 90vh;
+    height: 100vw;
 `
 
 const StyledOddSectionWrap = Styled.section`
-    width : 100%;
-    background : ${palette.violet[3]};
+    display: inherit;
+    padding : 2em;
+    flex: 1;
+    width: 100%;
+    hegiht: 33.3%;
+    background : ${palette.violet[2]};
 `
 
 const StyledEvenSectionWrap = Styled.section`
-    width : 100%;
+    display: inherit;
+    padding : 2em;
+    flex: 1;
+    width: 100%;
+    hegiht: 33.3%;
 `
 
 
@@ -24,7 +36,7 @@ const Main = () => {
     return (
         <StyledMainContainer>
             <StyledOddSectionWrap>
-                section1_Co-Study
+                <Content/>
             </StyledOddSectionWrap>
             <StyledEvenSectionWrap>
                 section2_Co-Project 

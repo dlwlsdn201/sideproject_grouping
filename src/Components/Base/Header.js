@@ -7,7 +7,7 @@ const StyledHeaderContainer = styled.header`
   display: flex;
   flex-flow : row wrap;
   justify-content: space-between;
-  width : 99.9%;
+  width : 100%;
   height : 3em;
   border : 1px solid green;
   cursor: auto;
@@ -35,7 +35,7 @@ const StyledNavWrap = styled.nav`
   border : 2px dashed blue;
   width : 70%;
   height : 100%;
-  padding : 0.1rem 1rem;
+  padding : 0.2em 1rem;
 `
 
 const StyledNavMenu = styled.li`
@@ -49,9 +49,7 @@ const StyledNavMenu = styled.li`
   border : 1px solid purple;
   width : 5em;
   height: 100%;
-
-  
-
+  font-size : 0.8em;
 `
 
 class Header extends Component {

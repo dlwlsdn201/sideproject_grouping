@@ -16,6 +16,7 @@ const App = () => {
 
   const StyledLink = Styled(Link)`
   text-decoration: none;
+  cursor : auto;
   
 
   &:focus, &:hover, &:visited, &:link, &:active {
