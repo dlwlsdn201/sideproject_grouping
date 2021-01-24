@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Logo from "../../lib/images/logo.png";
 import { Link } from "react-router-dom";
 
+
+
 const StyledHeaderContainer = styled.header`
   position: fixed;
   display: flex;
@@ -15,10 +17,14 @@ const StyledHeaderContainer = styled.header`
   cursor: auto;
   z-index: 99;
   font-size: 1.5em;
+  background: rgba(0,0,0,0.7);
 
   &:hover {
     background: rgba(66, 13, 136, 0.5);
   }
+
+  &if
+
 `;
 
 const StyledLogoWrap = styled.div`
@@ -46,7 +52,6 @@ const StyledNavMenu = styled.li`
   flex-grow: 1;
   margin: 0 0.5rem;
   padding: auto 100px;
-  /* border : 1px solid purple; */
   width: 5em;
   height: 100%;
   font-size: 0.8em;
