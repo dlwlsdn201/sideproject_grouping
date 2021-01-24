@@ -1,6 +1,5 @@
 import React from 'react';
 import Styled from 'styled-components';
-import {router} from 'react-router-dom';
 import palette from '../../lib/styles/palette';
 import Content from '../common/Content';
 
@@ -32,7 +31,7 @@ const StyledEvenSectionWrap = Styled.section`
 `
 
 
-const Main = () => {
+const HomeTemplete = () => {
     return (
         <StyledMainContainer>
             <StyledOddSectionWrap>
@@ -50,4 +49,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default HomeTemplete;

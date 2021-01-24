@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from "../components/base/Header";
-import Main from "../components/base/Main";
+import HomeMain from "../components/home/HomeMain";
 import Footer from '../components/base/Footer';
 import Backgruond from '../components/base/Background';
 
@@ -9,7 +9,7 @@ const HomePage = () => {
         <>
             <Header/>
             <Backgruond />
-            <Main />
+            <HomeMain />
             <Footer />
         </>
     );
