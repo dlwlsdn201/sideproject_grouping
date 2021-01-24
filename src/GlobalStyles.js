@@ -40,9 +40,8 @@ const GlobalStyles = createGlobalStyle`
         text-decoration : none;
         color: inherit;
         text-align: center;
-        margin : 20% 0;
-        padding : 0.5rem 0;
-        height: 100%;
+        margin : 0;
+        padding: 0;
     }
     
     *{
