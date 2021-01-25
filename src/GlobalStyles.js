@@ -6,13 +6,18 @@ const GlobalStyles = createGlobalStyle`
     html,body {
         margin: 0;
         padding: 0;
-        height: 100%;
+        height: auto;
         width: 100%;
         font-size: 1em;
         background : ${palette.gray[3]};
         display : flex;
         flex-flow: column nowrap;
         align-items: center;
+    }
+
+    html{
+        -ms-content-zooming: none;
+        -ms-touch-action: pan-x pan-y;
     }
 
     ul{

@@ -9,16 +9,16 @@ const StyledMainContainer = Styled.main`
     align-items: center;
     justify-contents: center;
     background : white;
-    width: 90%;
+    width: 90vw;
     height: 100vw;
 `
 
 const StyledOddSectionWrap = Styled.section`
-    display: inherit;
+    /* display: inherit; */
     padding : 2em;
     flex: 1;
     width: 100%;
-    hegiht: 33.3%;
+    height: 5px;
     background : ${palette.violet[2]};
 `
 
@@ -27,7 +27,7 @@ const StyledEvenSectionWrap = Styled.section`
     padding : 2em;
     flex: 1;
     width: 100%;
-    hegiht: 33.3%;
+    /* hegiht: 30vh; */
 `
 
 

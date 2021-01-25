@@ -1,11 +1,11 @@
 import React from 'react';
 import Styled from 'styled-components';
 import backgroundImg from '../../lib/images/background1.jpg';
-
+import Header from './Header';
 
 const BackgroundContainer = Styled.section`
-    width : 100%;
-    height: 45%;
+    width : 90vw;
+    height: 80vh;
     color: white;
 `
 
@@ -15,24 +15,50 @@ const StyledBackgroundWrap = Styled.div`
     background-size: 100%;
     width: 100%;
     height: 100%;
-
+    
 `
 
 const StyledSloganWrap = Styled.h1`
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    width: 100%;
-    padding: 10% 18%;
-    
+    max-width: 100vw;
+    margin-top : 14vh;
+    /* max-height: 20vh; */
+    /* height: 25vh; */
+    text-align : center;
+
+
     span{
-        font-size: 2rem;
+        font-size: 2.8vw;
     }
 
     p{
         font-weight: 300;
-        font-size: 1.2rem;
+        font-size: 1.5vw;
         word-break: keep-all;
-        margin-top : 2.2rem;
+        margin-top : 3vh;
+        margin-bottom: 0;
         line-height: 2rem;
+    }
+
+    @media(min-width: 320px) and (max-width: 768px){
+        width: 100vw;
+        height: 40vh;
+        padding: 10vh;
+
+        span{
+        font-size: 2.5vw;
+        }
+
+        p{
+            font-size: 1.5vw;
+            max-width: 60%;
+            line-height: 1.2rem;
+
+    }
     }
 `
 

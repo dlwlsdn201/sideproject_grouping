@@ -7,31 +7,52 @@ import { Link } from "react-router-dom";
 
 const StyledHeaderContainer = styled.header`
   position: fixed;
+  left: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  width: 100%;
-  height: 3.5em;
+  width: 100vw;
+  height: 14vh;
+  max-height: 14vh;
   border: 1px solid green;
   color: white;
   cursor: auto;
   z-index: 99;
-  font-size: 1.5em;
+  font-size: 3vh;
   background: rgba(0,0,0,0.7);
 
   &:hover {
     background: rgba(66, 13, 136, 0.5);
   }
 
-  &if
+  /* @media(min-width: 1024px){
+    height: 7vw;
+    background: red;
+  } */
+
+  @media(min-width: 320px) and (max-width: 768px){
+    height: 15vh;
+    background: blue;
+  }
 
 `;
 
 const StyledLogoWrap = styled.div`
   /* border : 2px dashed red; */
-  width: 7.5rem;
+  width: 12%;
   height: 100%;
-  min-width: 5rem;
+  /* @media(min-width: 1024px){
+    width : 13%;
+    height: 100%;
+  }
+
+  @media(min-width: 320px) and (max-width: 768px){
+    width: 22%;
+  }
+
+  @media(min-width: 768px) and (max-width: 768px){
+    width: 16%;
+  } */
 `;
 
 const StyledNavWrap = styled.nav`
@@ -39,9 +60,21 @@ const StyledNavWrap = styled.nav`
   justify-content: space-between;
   align-items: center;
   /* border : 2px dashed blue; */
-  width: 70%;
+  width: 78%;
   height: 100%;
-  padding: 0.2em 1rem;
+  /* padding: 0.1em 1.2em; */
+  /* @media(min-width: 1024px){
+    width : 60%;
+    padding: 0.1em 0.2em;
+  }
+  @media(min-width: 320px) and (max-width: 768px){
+    width: 75%;
+  }
+
+  @media(min-width: 768px) and (max-width: 768px){
+    width: 62%;
+    padding: 0.1em 0.2em;
+  } */
 `;
 
 const StyledNavMenu = styled.li`
@@ -50,17 +83,32 @@ const StyledNavMenu = styled.li`
   justify-content: center;
   list-style: none;
   flex-grow: 1;
-  margin: 0 0.5rem;
-  padding: auto 100px;
-  width: 5em;
+  margin: 0 1.2em;
+  width: 100%;
   height: 100%;
-  font-size: 0.8em;
   
-  a{height: 100%; width: 100%; padding: 1.5rem 0}
+  /* @media(min-width: 1024px){
+    height: 14vh;
+    font-size : 1.5vw;
+  }
+  @media(min-width: 320px) and (max-width: 768px){
+    padding: 4.5% 1%;
+    font-size : 1vw;
+    
+  @media(min-width: 768px) and (max-width: 768px){
+    padding: 3% 1%;
+  } */
+  }
+
+  a{
+    height: 100%; 
+    width: 100%; 
+    padding: 1.5em 0;
+    
   &:hover {
     background: #420d88;
   }
-`;
+  `;
 
 class Header extends Component {
   render() {

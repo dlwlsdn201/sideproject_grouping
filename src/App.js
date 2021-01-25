@@ -14,19 +14,9 @@ import Styled from 'styled-components';
 
 const App = () => {
 
-  const StyledLink = Styled(Link)`
-  text-decoration: none;
-  cursor : auto;
-  
-
-  &:focus, &:hover, &:visited, &:link, &:active {
-      text-decoration: none;
-  }
-`;
   return (
     <>
       <GlobalStyle/>
-      <StyledLink>
         <Route component={HomePage} path={["/Home", "/"]} exact/>
         <Route component={AboutPage} path="/About" />
         <Route component={CoStudyPage} path="/Co-Study"/>
@@ -35,7 +25,6 @@ const App = () => {
         <Route component={MyPagePage} path="/MyPage"/>
         <Route component={LoginPage} path="/Login" />
         <Route component={RegisterPage} path="/Register" />
-      </StyledLink>
     </>
   );
 };
