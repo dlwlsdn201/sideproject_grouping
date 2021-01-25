@@ -1,6 +1,5 @@
-import styled, {createGlobalStyle} from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import palette from "./lib/styles/palette";
-
 
 const GlobalStyles = createGlobalStyle`
     html,body {
@@ -27,16 +26,14 @@ const GlobalStyles = createGlobalStyle`
         display: flex;
         justify-content: space-around;
         align-items: center;
-        
-        @media(min-width: 320px) and (max-width: 768px){
+        /* (min-width: 320px) and */
+        @media (max-width: 768px){
         flex-flow: column nowrap;
         height: auto;
         }
     }
 
     img{
-    width : 100%;
-    height : 100%;
     max-width : 100%;
     max-height : 100%;
 
@@ -58,6 +55,6 @@ const GlobalStyles = createGlobalStyle`
     }
 
 
-` 
+`;
 
 export default GlobalStyles;

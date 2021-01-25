@@ -24,9 +24,11 @@ const StyledContentWrap = Styled.div `
     svg{
         animation: ${RotateHorizonal} 3s infinite;
     }
-
-    @media(min-width: 320px) and (max-width: 768px){
-        min-width: 100%;
+    /* (min-width: 320px) and  */
+    @media(max-width: 768px){
+        width: 38em;
+        max-width: 100%;
+        min-width: 50%;
         height: auto;
         /* padding: 10vh; */
     };
@@ -63,9 +65,13 @@ const StyledHashTag = Styled.ul`
     height: 5rem;
     font-size: 0.8rem;
     padding: 0.3rem;
-    line-height: 2em;
+    /* line-height: 100%; */
     text-align: left;
     font-weight: 700;
+    @media(max-width: 768px){
+            font-size: 0.001rem;
+            background: red;
+        }
 `
 const StyledIconWrap = Styled.div`
     display: flex;

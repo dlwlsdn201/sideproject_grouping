@@ -14,7 +14,7 @@ const StyledHeaderContainer = styled.header`
   width: 100vw;
   height: 14vh;
   max-height: 14vh;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   color: white;
   cursor: auto;
   z-index: 99;
@@ -27,7 +27,7 @@ const StyledHeaderContainer = styled.header`
 
 
   @media(min-width: 320px) and (max-width: 768px){
-    height: 15vh;
+    height: 10vh;
     background: blue;
   }
 
@@ -35,8 +35,19 @@ const StyledHeaderContainer = styled.header`
 
 const StyledLogoWrap = styled.div`
   /* border : 2px dashed red; */
-  width: 12%;
+  width: 12vw;
   height: 100%;
+
+  @media(min-width: 320px) and (max-width: 768px){
+    width: 24vw;
+    height: 100%;
+  }
+
+  @media(min-width: 768px) and (max-width: 768px){
+    width: 14vw;
+    height: 100%;
+  }
+
 
 `;
 
@@ -48,6 +59,17 @@ const StyledNavWrap = styled.nav`
   width: 78%;
   height: 100%;
 
+  @media(min-width: 320px) and (max-width: 768px){
+    width: 76vw;
+    height: 100%;
+    font-size: 1.8vh;
+  }
+
+  @media(min-width: 768px) and (max-width: 768px){
+    width: 86vw;
+    font-size: 2.5vh;
+  }
+
 `;
 
 const StyledNavMenu = styled.li`
@@ -56,15 +78,11 @@ const StyledNavMenu = styled.li`
   justify-content: center;
   list-style: none;
   flex-grow: 1;
-  margin: 0 1.2em;
+  margin: 0 1em;
+  padding: 0;
   width: 100%;
   height: 100%;
-  
 
-  a{
-    height: 100%; 
-    width: 100%; 
-    padding: 1.5em 0;
   }
   &:hover {
     background: #420d88;
