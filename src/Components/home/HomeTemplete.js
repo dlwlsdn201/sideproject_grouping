@@ -10,25 +10,24 @@ const StyledMainContainer = Styled.main`
     justify-contents: center;
     background : white;
     width: 90vw;
-    height: 100vw;
+    height: auto;
 `
 
 const StyledOddSectionWrap = Styled.section`
-    /* display: inherit; */
+    display: flex;
+    justify-content: space-around;
     padding : 2em;
     flex: 1;
     width: 100%;
-    height: 5px;
     background : ${palette.violet[2]};
-`
+`;
 
 const StyledEvenSectionWrap = Styled.section`
     display: inherit;
     padding : 2em;
     flex: 1;
     width: 100%;
-    /* hegiht: 30vh; */
-`
+`;
 
 
 const HomeTemplete = () => {

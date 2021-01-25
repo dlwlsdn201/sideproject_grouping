@@ -1,7 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
 import backgroundImg from '../../lib/images/background1.jpg';
-import Header from './Header';
 
 const BackgroundContainer = Styled.section`
     width : 90vw;
@@ -57,8 +56,7 @@ const StyledSloganWrap = Styled.h1`
             font-size: 1.5vw;
             max-width: 60%;
             line-height: 1.2rem;
-
-    }
+        }
     }
 `
 

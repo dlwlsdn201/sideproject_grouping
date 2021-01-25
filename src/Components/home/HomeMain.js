@@ -3,7 +3,9 @@ import HomeTemplete from './HomeTemplete';
 
 const HomeMain = () => {
     return (
-    <HomeTemplete/>
+        <>
+            <HomeTemplete/>
+        </>
     );
 };
 

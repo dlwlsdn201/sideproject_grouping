@@ -16,15 +16,21 @@ const RotateHorizonal = keyframes`
     }
 `
 const StyledContentWrap = Styled.div `
-    position: relative;
-    width : 30%;
-    height: 16.5rem;
+    /* position: relative; */
+    /* width : 30%; */
+    height: 100%;
     padding : 0.7rem;
     border : 1px dotted red;
     svg{
         animation: ${RotateHorizonal} 3s infinite;
-
     }
+
+    @media(min-width: 320px) and (max-width: 768px){
+        min-width: 100%;
+        height: auto;
+        /* padding: 10vh; */
+    };
+
 `;
 const StyledTitle = Styled.strong`
     width : 100%;

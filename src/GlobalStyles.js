@@ -15,11 +15,6 @@ const GlobalStyles = createGlobalStyle`
         align-items: center;
     }
 
-    html{
-        -ms-content-zooming: none;
-        -ms-touch-action: pan-x pan-y;
-    }
-
     ul{
         margin : 0;
     }
@@ -32,6 +27,11 @@ const GlobalStyles = createGlobalStyle`
         display: flex;
         justify-content: space-around;
         align-items: center;
+        
+        @media(min-width: 320px) and (max-width: 768px){
+        flex-flow: column nowrap;
+        height: auto;
+        }
     }
 
     img{

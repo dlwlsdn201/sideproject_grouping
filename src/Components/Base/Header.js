@@ -25,10 +25,6 @@ const StyledHeaderContainer = styled.header`
     background: rgba(66, 13, 136, 0.5);
   }
 
-  /* @media(min-width: 1024px){
-    height: 7vw;
-    background: red;
-  } */
 
   @media(min-width: 320px) and (max-width: 768px){
     height: 15vh;
@@ -41,18 +37,7 @@ const StyledLogoWrap = styled.div`
   /* border : 2px dashed red; */
   width: 12%;
   height: 100%;
-  /* @media(min-width: 1024px){
-    width : 13%;
-    height: 100%;
-  }
 
-  @media(min-width: 320px) and (max-width: 768px){
-    width: 22%;
-  }
-
-  @media(min-width: 768px) and (max-width: 768px){
-    width: 16%;
-  } */
 `;
 
 const StyledNavWrap = styled.nav`
@@ -62,19 +47,7 @@ const StyledNavWrap = styled.nav`
   /* border : 2px dashed blue; */
   width: 78%;
   height: 100%;
-  /* padding: 0.1em 1.2em; */
-  /* @media(min-width: 1024px){
-    width : 60%;
-    padding: 0.1em 0.2em;
-  }
-  @media(min-width: 320px) and (max-width: 768px){
-    width: 75%;
-  }
 
-  @media(min-width: 768px) and (max-width: 768px){
-    width: 62%;
-    padding: 0.1em 0.2em;
-  } */
 `;
 
 const StyledNavMenu = styled.li`
@@ -87,24 +60,12 @@ const StyledNavMenu = styled.li`
   width: 100%;
   height: 100%;
   
-  /* @media(min-width: 1024px){
-    height: 14vh;
-    font-size : 1.5vw;
-  }
-  @media(min-width: 320px) and (max-width: 768px){
-    padding: 4.5% 1%;
-    font-size : 1vw;
-    
-  @media(min-width: 768px) and (max-width: 768px){
-    padding: 3% 1%;
-  } */
-  }
 
   a{
     height: 100%; 
     width: 100%; 
     padding: 1.5em 0;
-    
+  }
   &:hover {
     background: #420d88;
   }
