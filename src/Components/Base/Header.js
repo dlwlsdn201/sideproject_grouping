@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 import Logo from "../../lib/images/logo.png";
 import { Link } from "react-router-dom";
@@ -82,15 +82,13 @@ const StyledNavMenu = styled.li`
   padding: 0;
   width: 100%;
   height: 100%;
-
-  }
+  
   &:hover {
     background: #420d88;
   }
   `;
 
-class Header extends Component {
-  render() {
+const Header = () => {
     return (
       <StyledHeaderContainer>
         <StyledLogoWrap>
@@ -117,7 +115,6 @@ class Header extends Component {
         </StyledNavWrap>
       </StyledHeaderContainer>
     );
-  }
 }
 
 export default Header;
