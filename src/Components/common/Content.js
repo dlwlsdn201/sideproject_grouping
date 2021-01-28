@@ -32,8 +32,8 @@ const StyledContentWrap = Styled.div `
         height: auto;
         /* padding: 10vh; */
     };
-
 `;
+
 const StyledTitle = Styled.strong`
     width : 100%;
     padding : 0 auto;
@@ -92,42 +92,51 @@ const Icon = {
 }
 
 
-
-
-const Content = () => {
-    const [title, setTitle] = useState('');
-    const [brief, setBrief] = useState('');
-    const [period, setPeriod] = useState('');
-    const [personnal, setPersonnal] = useState('');
-    const [tag, setTag] = useState('');
+const Content = ({data}) => {
+    // const [title, setTitle] = useState('');
+    // const [brief, setBrief] = useState('');
+    // const [period, setPeriod] = useState('');
+    // const [personnal, setPersonnal] = useState('');
+    // const [tag, setTag] = useState('');
     
+    const Tags = data.tag.map((TAG)=><li>#{TAG}</li>);
+    const Subjects = data.subject.map((SUBJECT)=>{
+        switch (SUBJECT) {
+            case 'html5':
+                return <FontAwesomeIcon style={Icon} icon={faHtml5} color="orange"/>;
+            case 'css3':
+                return <FontAwesomeIcon style={Icon} icon={faCss3} color="#526cff"/>;
+            case 'js':
+                return <FontAwesomeIcon style={Icon} icon={faJsSquare} color="#fdda3c"/>;
+            case 'react':
+                return <FontAwesomeIcon style={Icon} icon={faReact} spin color={palette.cyan[5]}/>;
+            default: 
+                return false;
+        }
+    });
+
     return (
         <StyledContentWrap>
             <StyledTitle>
-                프론트엔드 스터디
+                {data.title}
             </StyledTitle>
             <StyledBrief>
-                하반기 네이버 입사를 목표로 프론트엔드 준비하실 분 모집합니다!
+                {data.brief}
             </StyledBrief>
             <StyledRowWrap>
                 <StyledPeriod>
                     2월1일 ~ 8월 30일
                 </StyledPeriod>
                 <StyledPersonnal>
-                    2명|5명
+                    {data.people[0]}명|{data.people[1]}명
                 </StyledPersonnal>
             </StyledRowWrap>
             <StyledRowWrap>
                 <StyledHashTag>
-                    <li>#프론트엔드</li>
-                    <li>#네이버</li>
-                    <li>#강남구</li>
+                    {Tags}
                 </StyledHashTag>
                 <StyledIconWrap>
-                    <FontAwesomeIcon style={Icon} icon={faHtml5} color="orange"/>
-                    <FontAwesomeIcon style={Icon} icon={faCss3} color="#526cff"/>
-                    <FontAwesomeIcon style={Icon} icon={faJsSquare} color="#fdda3c"/>
-                    <FontAwesomeIcon style={Icon} icon={faReact} spin color={palette.cyan[5]}/>
+                    {Subjects}
                 </StyledIconWrap>
             </StyledRowWrap>
         </StyledContentWrap>
