@@ -88,6 +88,11 @@ const Icon = {
 
 
 const Content = ({data}) => {
+    // const [title, setTitle] = useState('');
+    // const [brief, setBrief] = useState('');
+    // const [period, setPeriod] = useState('');
+    // const [personnal, setPersonnal] = useState('');
+    // const [tag, setTag] = useState('');
     
     const Tags = data.tag.map((TAG)=><li>#{TAG}</li>);
     const Subjects = data.subject.map((SUBJECT)=>{
