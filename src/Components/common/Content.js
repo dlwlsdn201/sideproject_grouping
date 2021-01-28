@@ -22,7 +22,7 @@ const StyledContentWrap = Styled.div `
     padding : 0.7rem;
     border : 1px dotted red;
     svg{
-        animation: ${RotateHorizonal} 3s infinite;
+        animation: ${RotateHorizonal} 2s infinite;
     }
     /* (min-width: 320px) and  */
     @media(max-width: 768px){
@@ -74,17 +74,12 @@ const StyledHashTag = Styled.ul`
         }
 `
 const StyledIconWrap = Styled.div`
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    background : #333333;
-    border : 1px solid #3939ff;
+    display: inline;
+    background : #2b2b2b;
     text-align: center;
-    width: 5.5em;
-    bottom: 1.4%;
+    width: auto;
     padding: 0.3rem;
-
-    
+    align-self: flex-end;
 `
 const Icon = {
     fontSize: '1.5em',
@@ -93,11 +88,6 @@ const Icon = {
 
 
 const Content = ({data}) => {
-    // const [title, setTitle] = useState('');
-    // const [brief, setBrief] = useState('');
-    // const [period, setPeriod] = useState('');
-    // const [personnal, setPersonnal] = useState('');
-    // const [tag, setTag] = useState('');
     
     const Tags = data.tag.map((TAG)=><li>#{TAG}</li>);
     const Subjects = data.subject.map((SUBJECT)=>{
