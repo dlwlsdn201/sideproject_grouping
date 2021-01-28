@@ -29,14 +29,21 @@ const StyledEvenSectionWrap = Styled.section`
     width: 100%;
 `;
 
+const DATA = {
+    title : "FrontEnd Study",
+    brief : "하반기 네이버 공채 준비하시는 분 같이해요~",
+    tag : ["프론트엔드","네이버","카카오"],
+    people : [4,5],
+    subject : ["html5","css3","react"],
+};
 
 const HomeTemplete = () => {
     return (
         <StyledMainContainer>
             <StyledOddSectionWrap>
-                <Content/>
-                <Content/>
-                <Content/>
+                <Content data={DATA}/>
+                <Content data={DATA}/>
+                <Content data={DATA}/>
             </StyledOddSectionWrap>
             <StyledEvenSectionWrap>
                 section2_Co-Project 
