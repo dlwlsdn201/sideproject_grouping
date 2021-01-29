@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Test from '../auth/Test';
 import styled from "styled-components";
 import Logo from "../../lib/images/logo.png";
 import { Link } from "react-router-dom";
@@ -86,18 +87,35 @@ const StyledNavMenu = styled.li`
   }
 `;
 
-const Header = () => {
+
+
+const Header = ({login}) => {
+  const loginState = login;
+
   const [menu, setMenu] = useState([
     { id: 1, title: "About" },
     { id: 2, title: "Co-Study" },
     { id: 3, title: "Co-Project" },
     { id: 4, title: "Q&A" },
-    { id: 5, title: "MyPage" },
+    { id: 5, title: loginState? 'myPage' : 'Sign-Up' },
   ]);
+
+  // const CheckLogin = (STATE) => {
+  //   {alert('된다!')}
+  //   if(STATE){
+  //     setLoginState(true);
+  //     setMenu(menu.map(item => item.id === 5?
+  //       ({...item, title: 'MyPage'}) : item))
+  //   }else{
+  //     setLoginState(false);
+  //     setMenu(menu.map(item => item.id === 5?
+  //       ({...item, title: 'Sign-up'}) : item))
+  //   }
+  // }
 
   const menuLinkList = menu.map((MENU) => {
     return (
-      <StyledNavMenu>
+      <StyledNavMenu key={MENU.id}> 
         <Link to={`/ ${MENU.title}`}>{MENU.title}</Link>
       </StyledNavMenu>
     );

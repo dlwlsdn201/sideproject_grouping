@@ -7,7 +7,7 @@ import Background from '../components/base/Background';
 const HomePage = () => {
     return (
         <>
-            <Header/>
+            <Header login={true}/>
             <Background />
             <HomeMain />
             <Footer />
