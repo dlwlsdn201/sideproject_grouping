@@ -33,6 +33,18 @@ const GlobalStyles = createGlobalStyle`
         }
     }
 
+    .StyledSlideBlock{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        background: #fff2ac;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+
+    }
+
+
     img{
     max-width : 100%;
     max-height : 100%;

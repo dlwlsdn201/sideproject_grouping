@@ -17,9 +17,12 @@ const RotateHorizonal = keyframes`
 `
 const StyledContentWrap = Styled.div `
     /* position: relative; */
-    /* width : 30%; */
+    display: inherit;
+    flex: 1;
     height: 100%;
-    padding : 0.7rem;
+    width: 18em;
+    padding : 0.6rem;
+    margin: 1em 0.7em;
     border : 1px dotted red;
     svg{
         animation: ${RotateHorizonal} 2s infinite;
@@ -94,17 +97,17 @@ const Content = ({data}) => {
     // const [personnal, setPersonnal] = useState('');
     // const [tag, setTag] = useState('');
     
-    const Tags = data.tag.map((TAG)=><li>#{TAG}</li>);
-    const Subjects = data.subject.map((SUBJECT)=>{
+    const Tags = data.tag.map((TAG, index)=><li key={index}>#{TAG}</li>);
+    const Subjects = data.subject.map((SUBJECT, index)=>{
         switch (SUBJECT) {
             case 'html5':
-                return <FontAwesomeIcon style={Icon} icon={faHtml5} color="orange"/>;
+                return <FontAwesomeIcon key={index} style={Icon} icon={faHtml5} color="orange"/>;
             case 'css3':
-                return <FontAwesomeIcon style={Icon} icon={faCss3} color="#526cff"/>;
+                return <FontAwesomeIcon key={index} style={Icon} icon={faCss3} color="#526cff"/>;
             case 'js':
-                return <FontAwesomeIcon style={Icon} icon={faJsSquare} color="#fdda3c"/>;
+                return <FontAwesomeIcon key={index} style={Icon} icon={faJsSquare} color="#fdda3c"/>;
             case 'react':
-                return <FontAwesomeIcon style={Icon} icon={faReact} spin color={palette.cyan[5]}/>;
+                return <FontAwesomeIcon key={index} style={Icon} icon={faReact} spin color={palette.cyan[5]}/>;
             default: 
                 return false;
         }

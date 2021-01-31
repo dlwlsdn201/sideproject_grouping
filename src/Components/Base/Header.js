@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Test from '../auth/Test';
 import styled from "styled-components";
 import Logo from "../../lib/images/logo.png";
 import { Link } from "react-router-dom";
@@ -100,18 +99,6 @@ const Header = ({login}) => {
     { id: 5, title: loginState? 'myPage' : 'Sign-Up' },
   ]);
 
-  // const CheckLogin = (STATE) => {
-  //   {alert('된다!')}
-  //   if(STATE){
-  //     setLoginState(true);
-  //     setMenu(menu.map(item => item.id === 5?
-  //       ({...item, title: 'MyPage'}) : item))
-  //   }else{
-  //     setLoginState(false);
-  //     setMenu(menu.map(item => item.id === 5?
-  //       ({...item, title: 'Sign-up'}) : item))
-  //   }
-  // }
 
   const menuLinkList = menu.map((MENU) => {
     return (
