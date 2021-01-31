@@ -2,8 +2,8 @@ import styled, { createGlobalStyle } from "styled-components";
 import palette from "./lib/styles/palette";
 
 const GlobalStyles = createGlobalStyle`
-    html,body {
-        margin: 0;
+    body {
+        margin: 0 auto;
         padding: 0;
         height: auto;
         width: 100%;
@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
         display : flex;
         flex-flow: column nowrap;
         align-items: center;
+        color : #E0E1E2;
     }
 
     ul{
@@ -34,10 +35,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     .StyledSlideBlock{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        background: #fff2ac;
+        background: ${palette.skyblue[0]};
         text-align: center;
         width: 100%;
         padding: 0;
@@ -64,6 +62,12 @@ const GlobalStyles = createGlobalStyle`
     
     li{
         list-style: none;
+    }
+
+    h1{
+        margin: 0 auto;
+        margin-bottom : 1em;
+        text-align: center;
     }
 
 

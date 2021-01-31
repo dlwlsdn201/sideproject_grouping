@@ -43,6 +43,7 @@ const palette = {
         '#f3f0ff',
         '#e5dbff',
         '#d0bfff',
+        '#A593E0',
         '#b197fc',
         '#9775fa',
         '#845ef7',
@@ -50,6 +51,12 @@ const palette = {
         '#7048e8',
         '#6741d9',
         '#5f3dc4'
+    ],
+
+    skyblue: [
+        '#47555E',
+        '#566270',
+
     ]
 
 

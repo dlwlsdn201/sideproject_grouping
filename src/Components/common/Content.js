@@ -18,12 +18,12 @@ const RotateHorizonal = keyframes`
 const StyledContentWrap = Styled.div `
     /* position: relative; */
     display: inherit;
-    flex: 1;
     height: 100%;
-    width: 18em;
-    padding : 0.6rem;
+    width: 30%;
+    padding : 2em 0.6em;
     margin: 1em 0.7em;
-    border : 1px dotted red;
+    background: #415580;
+    /* border : 1px dotted red; */
     svg{
         animation: ${RotateHorizonal} 2s infinite;
     }
