@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Styled from 'styled-components';
 import palette from '../../lib/styles/palette';
 import Content from '../common/Content';
@@ -25,18 +25,12 @@ const StyledOddSectionWrap = Styled.section`
 `;
 
 const StyledEvenSectionWrap = Styled.section`
-    display: inherit;
+    display: block;
     padding : 2em;
     flex: 1;
     width: 100%;
     background : ${palette.gray[5]};
 `;
-
-// const StyledSlideBlock = Styled.div`
-//         display: flex;
-//         flex-flow: row wrap;
-//     `
-
 
 const settings = {
     slide: 'div',		//슬라이드 되어야 할 태그 ex) div, li 
@@ -52,16 +46,34 @@ const settings = {
 };
 
 
-const DATA = {
-    target : 'New Co-Study',
-    title : "FrontEnd Study",
-    brief : "하반기 네이버 공채 준비하시는 분 같이해요~",
-    tag : ["프론트엔드","네이버","카카오"],
-    people : [4,5],
-    subject : ["html5","css3","js","react"],
-};
+// const DATA = {
+//     target : 'New Co-Study',
+//     title : "FrontEnd Study",
+//     brief : "하반기 네이버 공채 준비하시는 분 같이해요~",
+//     tag : ["프론트엔드","네이버","카카오"],
+//     people : [4,5],
+//     subject : ["html5","css3","js","react"],
+// };
 
-const HomeTemplete = () => {
+const HomeTemplete = ({newDATA}) => {
+    const [DATA, setDATA] = useState({
+        target : 'New Co-Study',
+        title : "FrontEnd Study",
+        brief : "하반기 네이버 공채 준비하시는 분 같이해요~",
+        tag : ["프론트엔드","네이버","카카오"],
+        people : [4,5],
+        subject : ["html5","css3","js","react"],
+    })
+    console.log(newDATA);
+    // setDATA({
+    //     target : newDATA.target,
+    //     title : newDATA.title,
+    //     brief : newDATA.brief,
+    //     tag : [newDATA.tag],
+    //     people : [newDATA.people],
+    //     subject : [newDATA.subject],
+    // })
+
     return (
         <StyledMainContainer>
             <StyledOddSectionWrap>
@@ -80,7 +92,19 @@ const HomeTemplete = () => {
                 </Slider>
             </StyledOddSectionWrap>
             <StyledEvenSectionWrap>
-                section2_Co-Project 
+                <h1>{DATA.target}</h1>
+                <Slider {...settings}>
+                    <div className="StyledSlideBlock slider-item">
+                        <Content data={DATA}/>
+                        <Content data={DATA}/>
+                        <Content data={DATA}/>
+                    </div>
+                    <div className="StyledSlideBlock slider-item">
+                        <Content data={DATA}/>
+                        <Content data={DATA}/>
+                        <Content data={DATA}/>
+                    </div>
+                </Slider>
             </StyledEvenSectionWrap>
             <StyledOddSectionWrap>
                 section3_Q&A

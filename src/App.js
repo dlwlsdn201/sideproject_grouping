@@ -9,7 +9,7 @@ import {Route, Link} from 'react-router-dom';
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import AboutPage from "./pages/AboutPage";
-
+import WritePage from "./pages/WritePage";
 
 const App = () => {
 
@@ -24,6 +24,7 @@ const App = () => {
         <Route component={MyPagePage} path="/MyPage"/>
         <Route component={LoginPage} path="/Login" />
         <Route component={RegisterPage} path="/Register" />
+        <Route component={WritePage} path="/Write" />
     </>
   );
 };
