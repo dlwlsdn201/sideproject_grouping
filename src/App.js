@@ -18,12 +18,12 @@ const App = () => {
       <GlobalStyle/>
         <Route component={HomePage} path={["/Home","/"]} exact/>
         <Route component={AboutPage} path="/About" />
-        <Route component={CoStudyPage} path="/Co-Study"/>
+        <Route component={CoStudyPage} path="/Co-Study" />
         <Route component={CoProjectPage} path="/Co-Project"/>
         <Route component={QnAPage} path="/q&a"/>
         <Route component={MyPagePage} path="/MyPage"/>
-        <Route component={LoginPage} path="/Login" />
-        <Route component={RegisterPage} path="/Register" />
+        <Route component={LoginPage} path="/SignIn" />
+        <Route component={RegisterPage} path="/SignUp" />
         <Route component={WritePage} path="/Write" />
     </>
   );

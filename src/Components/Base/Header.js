@@ -96,14 +96,14 @@ const Header = ({login}) => {
     { id: 2, title: "Co-Study" },
     { id: 3, title: "Co-Project" },
     { id: 4, title: "Q&A" },
-    { id: 5, title: loginState? 'myPage' : 'Sign-Up' },
+    { id: 5, title: loginState? 'myPage' : 'SignUp' },
   ]);
 
 
   const menuLinkList = menu.map((MENU) => {
     return (
       <StyledNavMenu key={MENU.id}> 
-        <Link to={`/ ${MENU.title}`}>{MENU.title}</Link>
+        <Link to={`/${MENU.title}`}>{MENU.title}</Link>
       </StyledNavMenu>
     );
   });
@@ -111,7 +111,7 @@ const Header = ({login}) => {
   return (
     <StyledHeaderContainer>
       <StyledLogoWrap>
-        <Link to="/login">
+        <Link to="/Home">
           <img src={Logo} alt="home" />
         </Link>
       </StyledLogoWrap>

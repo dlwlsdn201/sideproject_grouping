@@ -22,8 +22,9 @@ const StyledContentWrap = Styled.div `
     width: 30%;
     padding : 2em 0.6em;
     margin: 1em 0.7em;
-    background: #415580;
-    /* border : 1px dotted red; */
+    background: #50689c;
+    border-radius: 25px;
+    /* border : 3px dotted red; */
     svg{
         animation: ${RotateHorizonal} 2s infinite;
     }
@@ -54,13 +55,15 @@ const StyledRowWrap = Styled.div`
     flex-flow : row nowrap;
     box-sizing: border-box;
 `;
-const StyledPeriod = Styled.h6`
+const StyledPeriod = Styled.h5`
     border: 1px dashed brown;
     margin-top: 0;
+    padding: 0.5em;
 `;
 const StyledPersonnal = Styled.h5`
     border: 1px solid black;
     margin-top: 0;
+    padding: 0.5em;
 `;
 const StyledHashTag = Styled.ul`
     border : 1px solid green;
@@ -68,7 +71,7 @@ const StyledHashTag = Styled.ul`
     height: 5rem;
     font-size: 0.8rem;
     padding: 0.3rem;
-    /* line-height: 100%; */
+    line-height: 1.8;
     text-align: left;
     font-weight: 700;
     @media(max-width: 768px){
