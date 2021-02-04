@@ -1,13 +1,14 @@
 import React from 'react';
-import HomeTemplate from "../components/base/Template";
-
+import Template from "../components/base/Template";
+import Main from '../components/base/Main';
 
 const CoStudyPage = () => {
     return (
-        <>
-            <HomeTemplate>
-            </HomeTemplate>
-        </>
+        <Template>
+            <Main>
+                
+            </Main>
+        </Template>
     );
 };
 

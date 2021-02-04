@@ -34,14 +34,14 @@ const StyledSloganWrap = Styled.h1`
         font-size: 2.8vw;
     }
 
-    p{
+    /* p{
         font-weight: 300;
         font-size: 1.5vw;
         word-break: keep-all;
         margin-top : 3vh;
         margin-bottom: 0;
         line-height: 2rem;
-    }
+    } */
 
     @media(min-width: 320px) and (max-width: 768px){
         width: 100vw;
@@ -68,7 +68,7 @@ const Background = () => {
             <StyledBackgroundWrap/>
             <StyledSloganWrap>
                 <span>그루핑에 들어온 이 순간, 당신은 이제 혼자가 아닙니다</span>
-                <p>여기는 웹 개발자의 꿈을 가지고 있는 예비 개발자들이 함께 성장할 수 있도록 도와줄 커뮤니티 플랫폼입니다. </p>
+
             </StyledSloganWrap>
         </BackgroundContainer>
     );

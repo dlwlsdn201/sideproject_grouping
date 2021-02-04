@@ -1,17 +1,15 @@
 import React from 'react';
-// import MyPageHeader from "./Header/MyPageHeader";
-// import MyPageMain from "./Main/MyPageMain";
-// import MyPageFooter from "./Footer/MyPageFooter";
+import Template from "../components/base/Template";
+import Main from '../components/base/Main';
 
 
 const CoStudyPage = () => {
     return (
-        <>
-            MyPage페이지
-            {/* <CoStudyHeader/>
-            <CoStduyMain/>
-            <CoStudyFooter/> */}
-        </>
+        <Template>
+            <Main>
+                
+            </Main>
+        </Template>
     );
 };
 

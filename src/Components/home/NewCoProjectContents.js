@@ -1,7 +1,7 @@
 import React from 'react';
 import Styled from 'styled-components';
 import palette from '../../lib/styles/palette';
-import Content from '../common/Content';
+import ProjectContent from '../common/ProjectContent';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -27,22 +27,24 @@ const settings = {
     swipeToSlide: true,
 };
 
-const NewCoProjectContents = ({data}) => {
-    const {target} = data;
+const NewCoProjectContents = ({Projects}) => {
+    const {target} = Projects;
 
     return (
         <StyledEvenSectionWrap>
                 <h1>{target}</h1>
                 <Slider {...settings}>
                     <div className="StyledSlideBlock slider-item">
-                        <Content data={data}/>
-                        <Content data={data}/>
-                        <Content data={data}/>
+                        <ProjectContent data={Projects}/>
+                        <ProjectContent data={Projects}/>
+                        <ProjectContent data={Projects}/>
+                        {/* {Projects.map((project)=>{<ProjectContent key={project.id} project={project}/>})} */}
                     </div>
                     <div className="StyledSlideBlock slider-item">
-                        <Content data={data}/>
-                        <Content data={data}/>
-                        <Content data={data}/>
+                        <ProjectContent data={Projects}/>
+                        <ProjectContent data={Projects}/>
+                        <ProjectContent data={Projects}/>
+                        {/* {Projects.map((project)=>{<ProjectContent key={project.id} project={project}/>})} */}
                     </div>
                 </Slider>
             </StyledEvenSectionWrap>

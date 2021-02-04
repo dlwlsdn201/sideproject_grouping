@@ -1,17 +1,15 @@
 import React from 'react';
-// import CoProjectHeader from "./Header/CoProjectHeader";
-// import CoProjectMain from "./Main/CoProjectMain";
-// import CoProjectFooter from "./Footer/CoProjectFooter";
+import Template from "../components/base/Template";
+import Main from '../components/base/Main';
 
 
 const CoProjectPage = () => {
     return (
-        <>
-        Co-Project 페이지
-            {/* <CoStudyHeader/>
-            <CoStduyMain/>
-            <CoStudyFooter/> */}
-        </>
+        <Template>
+            <Main>
+                
+            </Main>
+        </Template>
     );
 };
 

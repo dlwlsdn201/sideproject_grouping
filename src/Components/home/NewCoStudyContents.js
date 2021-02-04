@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Styled from 'styled-components';
 import palette from '../../lib/styles/palette';
-import Content from '../common/Content';
+import StudyContent from '../common/StudyContent';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -27,21 +27,22 @@ const settings = {
     swipeToSlide: true,
 };
 
-const NewCoStudyContents = ({data}) => {
-    const {target} = data;
+const NewCoStudyContents = ({Studies}) => {
+
+    const {target} = Studies;
     return (
         <StyledOddSectionWrap>
                 <h1>{target}</h1>
                 <Slider {...settings}>
                     <div className="StyledSlideBlock slider-item">
-                        <Content data={data}/>
-                        <Content data={data}/>
-                        <Content data={data}/>
+                        <StudyContent data={Studies}/>
+                        <StudyContent data={Studies}/>
+                        <StudyContent data={Studies}/>
                     </div>
                     <div className="StyledSlideBlock slider-item">
-                        <Content data={data}/>
-                        <Content data={data}/>
-                        <Content data={data}/>
+                        <StudyContent data={Studies}/>
+                        <StudyContent data={Studies}/>
+                        <StudyContent data={Studies}/>
                     </div>
                 </Slider>
             </StyledOddSectionWrap>

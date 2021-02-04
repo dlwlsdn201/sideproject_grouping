@@ -9,7 +9,7 @@ const StyledMainContainer = Styled.main`
     justify-contents: center;
     background : white;
     width: 90vw;
-    height: auto;
+    height: 90rem;
 `
 
 const Main = ({children}) => {

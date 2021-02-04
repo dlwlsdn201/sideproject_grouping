@@ -93,42 +93,22 @@ const Icon = {
 }
 
 
-const Content = ({data}) => {
-    // const [title, setTitle] = useState('');
-    // const [brief, setBrief] = useState('');
-    // const [period, setPeriod] = useState('');
-    // const [personnal, setPersonnal] = useState('');
-    // const [tag, setTag] = useState('');
-    console.log(data);
-    const Tags = data.map((DATA, index)=><li key={index}>#{DATA.tag}</li>);
-    const Subjects = data.map((DATA, index)=>{
-        if(DATA.SUBJECT !== undefined){
-            switch (DATA.SUBJECT) {
-                case 'html5':
-                    return <FontAwesomeIcon key={index} style={Icon} icon={faHtml5} color="orange"/>;
-                case 'css3':
-                    return <FontAwesomeIcon key={index} style={Icon} icon={faCss3} color="#526cff"/>;
-                case 'js':
-                    return <FontAwesomeIcon key={index} style={Icon} icon={faJsSquare} color="#fdda3c"/>;
-                case 'react':
-                    return <FontAwesomeIcon key={index} style={Icon} icon={faReact} spin color={palette.cyan[5]}/>;
-                default: 
-                    return false;
-            }
-        }else{
-            switch (DATA.SUBJECT) {
-                case 'front':
-                    return <FontAwesomeIcon key={index} style={Icon} icon={faLaptopCode} color="orange"/>;
-                case 'back':
-                    return <FontAwesomeIcon key={index} style={Icon} icon={faDatabase} color="#526cff"/>;
-                case 'server':
-                    return <FontAwesomeIcon key={index} style={Icon} icon={faServer} color="#1c8a2e"/>;
-                case 'design':
-                    return <FontAwesomeIcon key={index} style={Icon} icon={faPencilRuler} spin color="#b452f5"/>;
-                default: 
-                    return false;
-        }
-        }
+const ProjectContent = ({data}) => {
+    const Tags = data.tag.map((TAG, index)=><li key={index}>#{TAG}</li>);
+    const Positions = data.positions.map((POSITION, index)=>{
+        switch (POSITION) {
+            case 'front':
+                return <FontAwesomeIcon key={index} style={Icon} icon={faLaptopCode} color="orange"/>;
+            case 'back':
+                return <FontAwesomeIcon key={index} style={Icon} icon={faDatabase} color="#526cff"/>;
+            case 'server':
+                return <FontAwesomeIcon key={index} style={Icon} icon={faServer} color="#1c8a2e"/>;
+            case 'design':
+                return <FontAwesomeIcon key={index} style={Icon} icon={faPencilRuler} spin color="#b452f5"/>;
+            default: 
+                return false;
+    }
+        
     });
 
     return (
@@ -152,11 +132,11 @@ const Content = ({data}) => {
                     {Tags}
                 </StyledHashTag>
                 <StyledIconWrap>
-                    {Subjects}
+                    {Positions}
                 </StyledIconWrap>
             </StyledRowWrap>
         </StyledContentWrap>
     );
 };
 
-export default Content;
+export default ProjectContent;
